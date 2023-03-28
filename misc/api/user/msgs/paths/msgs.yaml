@@ -1,0 +1,34 @@
+get:
+  tags:
+    - msgs
+  summary: Список заявок пользователя
+  responses:
+    200:
+      description: Успешное выполнение
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "../schemas/msg.yaml"
+  security:
+    - USERSID: [ ]
+post:
+  tags:
+    - msgs
+  summary: Создание заявки
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas/msgAddRequest.yaml"
+    required: true
+  responses:
+    200:
+      description: Успешное выполнение
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/msgAddResponse.yaml"
+  security:
+    - USERSID: [ ]

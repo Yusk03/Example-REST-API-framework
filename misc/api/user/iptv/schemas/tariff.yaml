@@ -1,0 +1,26 @@
+type: object
+properties:
+  comments:
+    type: string
+    example: Дуже класний тариф
+  dayFee:
+    type: number
+    example: 50
+  id:
+    type: number
+    example: 101
+  monthFee:
+    type: number
+    example: 50
+  name:
+    type: string
+    example: Тест 1
+  reductionFee:
+    type: number
+    example: 0
+  serviceId:
+    type: number
+    example: 5
+  tpId:
+    type: number
+    example: 15
